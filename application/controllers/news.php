@@ -12,14 +12,15 @@ class news extends CI_Controller
 {
     public function __construct(){
         parent::__construct();
-        $this->load->model('news_model');
+        $this->load->model('News_model');
         //echo "construct compulete!";
     }
     
     
     public function index()
     {
-        $data['news'] = $this->news_model->get_news();        
+        $data['news_list'] = $this->News_model->get_news_list();        
+        print_r($data['news_list']);
         $data['title'] = 'home';
         $data['home_navigation'] ='current';
         $this->load->view('templates/header', $data);
@@ -30,7 +31,7 @@ class news extends CI_Controller
 
     public function view($slug)
     {
-        $data['news_item'] = $this->news_model->get_news($slug);        
+        $data['news_list'] = $this->news_model->get_news($slug);        
         
         if (empty($data['news_item']))
         {

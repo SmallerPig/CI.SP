@@ -12,7 +12,7 @@ class Home extends CI_Controller
 {
     public function __construct(){
         parent::__construct();
-        //$this->load->model('news_model');
+        $this->load->model('home_model');
         //echo "excution in construct";
     }  
 
@@ -20,9 +20,10 @@ class Home extends CI_Controller
     public function index()
     {    
         
-        //$data['news'] = $this->news_model->get_news();        
+        $data['news_list'] = $this->home_model->get_news_list();        
+        $data['topic_list'] = $this->home_model->get_topic_list();
         $data['title'] = 'home';
-        $data['home_navigation'] ='current';
+        $data['news_nav'] ='current';
         $this->load->view('templates/header', $data);
         $this->load->view('templates/navigation', $data);
         $this->load->view('home/index', $data);
@@ -31,7 +32,7 @@ class Home extends CI_Controller
 
     public function view($slug)
     {
-        $data['news_item'] = $this->news_model->get_news($slug);        
+        $data['news_item'] = $this->home_model->get_news($slug);        
         
         if (empty($data['news_item']))
         {

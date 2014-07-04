@@ -41,14 +41,9 @@
                 <a class="moreLink" href="javascript:void(0)">更多&gt;</a>
             </div>
             <div class="contentArea">
-                <a href="javascript:void(0)" class="newsTitle">新闻信息标题新闻信息标题新闻信息标题新闻信息标题</a>
-                <a href="javascript:void(0)" class="newsTitle">新闻信息标题新闻信息标题新闻信息标题新闻信息标题</a>
-                <a href="javascript:void(0)javascript:void(0)" class="newsTitle">新闻信息标题新闻信息标题新闻信息标题新闻信息标题</a>
-                <a href="javascript:void(0)" class="newsTitle">新闻信息标题新闻信息标题新闻信息标题新闻信息标题</a>
-                <a href="javascript:void(0)" class="newsTitle">新闻信息标题新闻信息标题新闻信息标题新闻信息标题</a>
-                <a href="javascript:void(0)" class="newsTitle">新闻信息标题新闻信息标题新闻信息标题新闻信息标题</a>
-                <a href="javascript:void(0)" class="newsTitle">新闻信息标题新闻信息标题新闻信息标题新闻信息标题</a>
-                <a href="javascript:void(0)" class="newsTitle">新闻信息标题新闻信息标题新闻信息标题新闻信息标题</a>
+                <?php foreach($news_list as $row): ?>
+                <a href="javascript:void(0)" class="newsTitle"><?=$row->title ?></a>
+                <?php endforeach;?>
             </div>
         </div>
         <!-- 新闻与活动结束 -->
@@ -62,21 +57,14 @@
                 <a class="moreLink" href="javascript:void(0)javascript:void(0)">更多&gt;</a>
             </div>
             <div class="contentArea">
-                <a class="topicItem" href="javascript:void(0)javascript:void(0)">
-                    <img class="topicImage" src="/srctemp/QQ截图20140512094825.png" />
-                    <div class="textTitle">专题标题专题标题专题标题专题标题专题标题专题标题专题标题专题标题专题标题专题标题</div>
-                    <div class="textBrief">专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息</div>
-                </a>
-                <a class="topicItem" href="javascript:void(0)javascript:void(0)">
-                    <img class="topicImage" src="/srctemp/QQ截图20140512094825.png" />
-                    <div class="textTitle">专题标题专题标题专题标题专题标题专题标题专题标题专题标题专题标题专题标题专题标题</div>
-                    <div class="textBrief">专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息</div>
-                </a>
-                <a class="topicItem" href="javascript:void(0)javascript:void(0)">
-                    <img class="topicImage" src="/srctemp/QQ截图20140512094825.png" />
-                    <div class="textTitle">专题标题专题标题专题标题专题标题专题标题专题标题专题标题专题标题专题标题专题标题</div>
-                    <div class="textBrief">专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息</div>
-                </a>
+                <? foreach($topic_list as $topic): ?>
+                     <a class="topicItem" href="javascript:void(0)">
+                        <img class="topicImage" src="/srctemp/QQ截图20140512094825.png" />
+                        <div class="textTitle"><?=$topic->title ?></div>
+                        <div class="textBrief"><?=$topic->summary ?></div>
+                    </a>               
+                <? endforeach;?>
+
                 <a class="topicItem" href="javascript:void(0)javascript:void(0)">
                     <img class="topicImage" src="/srctemp/QQ截图20140512094825.png" />
                     <div class="textTitle">专题标题专题标题专题标题专题标题专题标题专题标题专题标题专题标题专题标题专题标题</div>

@@ -41,7 +41,7 @@ $route['news/create'] = 'news/create';
 $route['news/(:any)'] = 'news/view/$1';
 $route['news'] = 'news';
 $route['home'] = 'home';
-$route['default_controller'] = 'news/view';
+$route['default_controller'] = 'home/index';
 $route['(:any)'] = 'pages/view/$1';
 
 
