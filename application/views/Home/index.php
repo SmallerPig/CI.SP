@@ -14,19 +14,19 @@
         <div id="slidePicArea">
             <div id="slidePicWrapper">
                 <a href="javascript:void(0)">
-                    <img class="slidePicItem" src="/srctemp/QQ截图20140512094825.png" />
+                    <img class="slidePicItem" src="srctemp/QQ截图20140512094825.png" />
                 </a>
                 <a href="javascript:void(0)">
-                    <img class="slidePicItem" src="/srctemp/QQ截图20140512094825.png" />
+                    <img class="slidePicItem" src="srctemp/QQ截图20140512094825.png" />
                 </a>
                 <a href="javascript:void(0)">
-                    <img class="slidePicItem" src="/srctemp/QQ截图20140512094825.png" />
+                    <img class="slidePicItem" src="srctemp/QQ截图20140512094825.png" />
                 </a>
                 <a href="javascript:void(0)">
-                    <img class="slidePicItem" src="/srctemp/QQ截图20140512094825.png" />
+                    <img class="slidePicItem" src="srctemp/QQ截图20140512094825.png" />
                 </a>
                 <a href="javascript:void(0)">
-                    <img class="slidePicItem" src="/srctemp/QQ截图20140512094825.png" />
+                    <img class="slidePicItem" src="srctemp/QQ截图20140512094825.png" />
                 </a>
             </div>
             <div id="slidePicInfoArea">
@@ -65,11 +65,6 @@
                     </a>               
                 <? endforeach;?>
 
-                <a class="topicItem" href="javascript:void(0)javascript:void(0)">
-                    <img class="topicImage" src="/srctemp/QQ截图20140512094825.png" />
-                    <div class="textTitle">专题标题专题标题专题标题专题标题专题标题专题标题专题标题专题标题专题标题专题标题</div>
-                    <div class="textBrief">专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息专题信息</div>
-                </a>
             </div>
         </div>
         <div id="rightSideAdArea">
@@ -80,9 +75,6 @@
     <!-- 专题结束 -->
 
 
-    <link rel="stylesheet" type="text/css" href="/content/src/css/home.css">
+    <link rel="stylesheet" type="text/css" href="content/src/css/home.css">
 
     <script src="/content/src/js/home.js"></script>
-    <script src="/Scripts/jquery-1.8.2.min.js"></script>
-
-
