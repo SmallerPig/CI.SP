@@ -1,5 +1,4 @@
-
-    <div class="contentRow">
+     <div class="contentRow">
         <div id="pictureSearchArea">
             <div id="pictureSearchAreaTitle">图片搜索</div>
             <div id="pictureSearchAreaContentWrapper">
@@ -75,6 +74,6 @@
     <!-- 专题结束 -->
 
 
-    <link rel="stylesheet" type="text/css" href="content/src/css/home.css">
+    <!-- <link rel="stylesheet" type="text/css" href="content/src/css/home.css"> -->
 
-    <script src="/content/src/js/home.js"></script>
+    <!--<script src="/content/src/js/home.js"></script>-->

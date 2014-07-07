@@ -1,3 +1,15 @@
 增加专题首页
 隐藏入口文件，删除无用路由。(必须开启apache的rewrite模块，重启)
 删除首页对jquery的引用
+
+
+sql:CREATE TABLE sp_news (
+    id mediumint(8) unsigned NOT NULL auto_increment,
+    username char(15) NOT NULL default '',
+    password char(32) NOT NULL default '',
+    email varchar(40) NOT NULL default '',
+    regdate int(10) unsigned NOT NULL default '0',
+    PRIMARY KEY (uid),
+    UNIQUE KEY username (username),
+    KEY email (email)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;

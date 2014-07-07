@@ -20,10 +20,11 @@ class Home extends CI_Controller
     
     public function index()
     {    
-        
         $data['news_list'] = $this->home_model->get_news_list();        
         $data['topic_list'] = $this->home_model->get_topic_list();
         $data['title'] = 'home';
+        $data['head_link'] = array('<link rel="stylesheet" type="text/css" href="content/src/css/home.css">',
+            '<script src="/content/src/js/home.js"></script>');
         $data['home_nav'] ='current';
         $this->load->view('templates/header', $data);
         $this->load->view('templates/navigation', $data);

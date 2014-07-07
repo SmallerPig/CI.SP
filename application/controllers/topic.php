@@ -23,7 +23,7 @@ class Topic extends CI_Controller{
 	}
 
 	public function index(){
-		$data['topic_list'] = $this->topic_model->topic_list();
+		$data['topic_list'] = $this->topic_model->topic_list_linq();
 		$data['title'] = '专题';
         $data['topic_nav'] ='current';
         $this->load->view('templates/header', $data);
