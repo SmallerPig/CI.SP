@@ -3,13 +3,33 @@
 删除首页对jquery的引用
 
 
-sql:CREATE TABLE sp_news (
-    id mediumint(8) unsigned NOT NULL auto_increment,
-    username char(15) NOT NULL default '',
-    password char(32) NOT NULL default '',
-    email varchar(40) NOT NULL default '',
-    regdate int(10) unsigned NOT NULL default '0',
-    PRIMARY KEY (uid),
-    UNIQUE KEY username (username),
-    KEY email (email)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+sql:
+CREATE TABLE sp_news (
+    id int(8) unsigned NOT NULL auto_increment,
+    title varchar(200) NOT NULL default '',
+    summary varchar(2000) NOT NULL default '',
+    content text NULL default '',    
+    PRIMARY KEY (id),    
+    KEY title (title)
+) ENGINE = MyISAM  DEFAULT CHARSET = tf8 AUTO_INCREMENT = 1;
+
+
+CREATE TABLE sp_topic(
+	id int(8) unsigned NOT NULL auto_increment,
+	title varchar(200) NOT NULL default '',
+	summary varchar(2000) NOT NULL default '',
+	cover varchar(200) NOT NULL default '',
+	pics varchar(1000) NULL default '',
+	PRIMARY KEY(id)
+) ENGINE = MyISAM DEFAULT CHARSET = utf8 AUTO_INCRMENT = 1;
+
+CREATE TABLE sp_admin(
+	id int(8) unsigned NOT NULL auto_increment,
+	username varchar(20) NOT NULL default '',
+	password varchar (20) NOT NULL default '',
+	PRIMARY KEY(id)
+) ENGINE =MyISAM DEFAULT CHARSET = utf8 AUTO_INCREMENT = 1;
+
+INSERT INTO sp_admin (id,username,password) values(null,'admin',md5('admin'))
+
+
